@@ -29,6 +29,7 @@ public class SoundClipTest extends JFrame{
         AudioData MD;
         ContinuousAudioDataStream loop = null;
         try{
+            //BGM = new AudioStream(new FileInputStream("resource\\pokerap.wav"));
             BGM = new AudioStream(new FileInputStream("resource\\pokerap.wav"));
             MD = BGM.getData();
             loop = new ContinuousAudioDataStream(MD);
